@@ -1,0 +1,123 @@
+body{
+    background-color: black;
+}
+.movies{
+display: flex;
+justify-content: center;
+margin-top: 30px;
+gap: 25px;
+align-items: center;
+}
+.movies label{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 300;
+}
+.movies select{
+    width: 200px;
+    height: 30px;
+    font-size: 1.1rem;
+    border-radius: 5px 5px 5px 5px;
+}
+.movies select option{
+    border-radius: 15px;
+}
+.details{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.box{
+    display: flex;
+    gap: 20px;
+}
+.box p{
+    color: white;
+}
+.dummyseat{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    border-radius: 15px 15px 0px 0px ;
+    margin-right: 10px;
+}
+#ScreenImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+#screen{
+    width: 800px;
+    height: 35px;
+}
+.seat{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    border-radius: 15px 15px 0px 0px ;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.seat:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.SelectedSeat{
+    background-color: rgb(180,132,132);
+    transition: 0.3s;
+}
+.seat2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(180,132,132);
+    border-radius: 15px 15px 0px 0px ;
+}
+.seat3{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px ;
+    margin-right: 10px;
+}
+.row1{
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+#priceDetails{
+    text-align: center;
+}
+#priceDetails p{
+    color: white;
+    font-size: 1.3rem;
+}
+#seatsSelected{
+    color: green;
+}
+#price{
+    color: green;
+}
+
+.gold{
+    text-align: center;
+    margin-top: 25px;
+}
+.line1{
+    width: 300px;
+    color: rgb(29,51,94);
+}
+.line2{
+    width: 400px;
+    color: rgb(29,51,94);
+}
+.goldText{
+    color: rgb(48,215,169);
+    font-size: 1.2rem;
+    font-weight: 600;
+}

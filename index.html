@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+       <div class="movies">
+        <label>Pick a movie: </label>
+        <select id="movieDetails">
+            
+            <option value="550">God Father(550)</option>
+            <option value="650">Bimbisara(650)</option>
+            <option value="850">RRR(850)</option>
+            <option value="750">Kanthara(750)</option>
+            <option value="450">Yashoda(450)</option>
+        </select>
+       </div>
+       <div class="details">
+                <div class="box">
+                    <div class="dummyseat"></div>
+                    <p>N/A</p>
+                </div>
+                <div class="box">
+                    <div class="seat2"></div>
+                    <p>Selected</p>
+                </div>
+                <div class="box">
+                    <div class="seat3"></div>
+                    <p>Occupied</p>
+                </div>
+       </div>
+       <div id="ScreenImage">
+        <img src="theaterScreen.PNG" alt="screenImage" id="screen">
+       </div>
+       <div class="movieSeats">
+            <div class="row1">
+                <div class="set1">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set2">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set3">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="set1">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set2">
+                    <button class="seat"></button>
+                    <button class="seat3"></button>
+                    <button class="seat3"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set3">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="set1">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set2">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set3">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="set1">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set2">
+                    <button class="seat"></button>
+                    <button class="seat3"></button>
+                    <button class="seat3"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set3">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="set1">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set2">
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                    <button class="seat"></button>
+                </div>
+                <div class="set3">
+                    <button class="seat3"></button>
+                    <button class="seat3"></button>
+                </div>
+            </div>
+       </div>
+
+       <div class="gold">
+        <hr class="line1">
+        <p class="goldText">GOLD-₹ 650</p>
+        <hr class="line2">
+       </div>
+
+    <div class="row1">
+        <div class="set1">
+            <button class="seat"></button>
+            <button class="seat"></button>
+        </div>
+        <div class="set2">
+            <button class="seat"></button>
+            <button class="seat"></button>
+            <button class="seat3"></button>
+            <button class="seat"></button>
+        </div>
+        <div class="set3">
+            <button class="seat"></button>
+            <button class="seat"></button>
+        </div>
+    </div>
+
+    <div class="row1">
+        <div class="set1">
+            <button class="seat3"></button>
+            <button class="seat3"></button>
+        </div>
+        <div class="set2">
+            <button class="seat"></button>
+            <button class="seat"></button>
+            <button class="seat"></button>
+            <button class="seat"></button>
+        </div>
+        <div class="set3">
+            <button class="seat"></button>
+            <button class="seat"></button>
+        </div>
+    </div>
+    
+    <div class="gold">
+        <hr class="line1">
+        <p class="goldText">DIAMOND-₹ 850</p>
+        <hr class="line2">
+       </div>
+
+       <div id="priceDetails">
+        <p>Seats Selected :<span id="totalseatsSelected"></span></p>
+        <p>Total Price ₹:<span id="price"></span></p>
+       </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

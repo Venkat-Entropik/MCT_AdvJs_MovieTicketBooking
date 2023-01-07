@@ -11,7 +11,7 @@ init()
 function init(){
 
     selectedSeatsdata();
-    saveSelectedSeats();
+  
     clearButton.addEventListener('click',clearData);
 }
 
@@ -52,11 +52,7 @@ function selectedSeatsdata(){
     
 }
 
-function saveSelectedSeats(){
-    let selectedSeatsData=document.querySelectorAll('.SelectedSeat');
-    
-   
-}
+
 
 function clearData(){
     localStorage.clear();

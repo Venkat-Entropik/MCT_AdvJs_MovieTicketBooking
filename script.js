@@ -3,14 +3,14 @@ const seats=document.getElementsByClassName('seat');
 let totalSeatsSelected=document.getElementById('totalseatsSelected');
 const totalPrice=document.getElementById('price');
 let selected=document.getElementsByClassName("SelectedSeat")
-
+const clearButton=document.getElementById('clickButton');
 init()
 
 
 function init(){
 
     selectedSeatsdata();
-  
+    clearButton.addEventListener('click',clearData);
 }
 
 function selectedSeatsdata(){   
@@ -28,6 +28,7 @@ function selectedSeatsdata(){
                 value.classList.add('SelectedSeat');
               
                localStorage.setItem(`${index}`,`${value.className}`)
+             
             }
             else{
               value.classList.remove('SelectedSeat');
@@ -36,7 +37,7 @@ function selectedSeatsdata(){
                 
             }
             
-
+           
             totalSeatsSelected.innerText=localStorage.length;
             let lengthOfSelectedSeats=localStorage.length;
             let price=lengthOfSelectedSeats * movieDetails.value;
@@ -46,4 +47,17 @@ function selectedSeatsdata(){
     })  
   
    
+}
+
+function clearData(){
+    localStorage.clear();
+    sessionStorage.clear();
+    let removeClassName= document.querySelectorAll('.SelectedSeat');
+    for(let i=0;i<removeClassName.length;i++){
+        removeClassName[i].classList.remove('SelectedSeat');
+    }
+        
+    
+    totalSeatsSelected.innerText=0;
+    totalPrice.innerText=0;
 }

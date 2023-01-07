@@ -10,7 +10,7 @@ init()
 function init(){
 
     selectedSeatsdata();
-    getSelectedSeats();
+  
 }
 
 function selectedSeatsdata(){   
@@ -38,13 +38,12 @@ function selectedSeatsdata(){
             
 
             totalSeatsSelected.innerText=localStorage.length;
+            let lengthOfSelectedSeats=localStorage.length;
+            let price=lengthOfSelectedSeats * movieDetails.value;
+            totalPrice.innerText=price;
         })
       
     })  
   
-   
-}
-
-function getSelectedSeats(){
    
 }
